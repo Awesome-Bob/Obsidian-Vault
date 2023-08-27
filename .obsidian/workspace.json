@@ -8,14 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3c938fef6634050f",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
             "id": "71cbff3aac9e5aa8",
             "type": "leaf",
             "state": {
@@ -27,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -145,9 +136,17 @@
               "type": "advanced-tables-toolbar",
               "state": {}
             }
+          },
+          {
+            "id": "ec5c9fefb8227d22",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -164,7 +163,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "651dba4a971e638e",
+  "active": "71cbff3aac9e5aa8",
   "lastOpenFiles": [
     "Learning.md"
   ]
