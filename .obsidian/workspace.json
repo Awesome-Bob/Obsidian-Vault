@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "86052965827969d5",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.5"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -154,17 +165,46 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "71cbff3aac9e5aa8",
+  "active": "86052965827969d5",
   "lastOpenFiles": [
-    "Learning.md"
+    "Markdown/_extended-syntax/availability.md",
+    "Markdown/_extended-syntax/fenced-code-blocks.md",
+    "Markdown/_extended-syntax/footnotes.md",
+    "Markdown/_extended-syntax/task-lists.md",
+    "Markdown/_extended-syntax/tables.md",
+    "Markdown/_extended-syntax/superscript.md",
+    "Markdown/_extended-syntax/subscript.md",
+    "Markdown/_extended-syntax/strikethrough.md",
+    "Markdown/_extended-syntax/overview.md",
+    "Markdown/_extended-syntax/highlight.md",
+    "Markdown/_extended-syntax/heading-ids.md",
+    "Markdown/_extended-syntax/emoji.md",
+    "Markdown/_extended-syntax/definition-lists.md",
+    "Markdown/_extended-syntax/automatic-url-linking.md",
+    "Markdown/_extended-syntax",
+    "Markdown/_basic-syntax/lists.md",
+    "Markdown/_basic-syntax/links.md",
+    "Markdown/_basic-syntax/line-breaks.md",
+    "Markdown/_basic-syntax/italic.md",
+    "Markdown/_basic-syntax/images.md",
+    "Markdown/_basic-syntax/html.md",
+    "Markdown/_basic-syntax/horizontal-rules.md",
+    "Markdown/_basic-syntax/headings.md",
+    "Markdown/_basic-syntax/escaping-characters.md",
+    "Markdown/_basic-syntax/emphasis.md",
+    "Markdown/_basic-syntax/code.md",
+    "Markdown/_basic-syntax/bold.md",
+    "Markdown/_basic-syntax",
+    "Markdown",
+    "Java"
   ]
 }
