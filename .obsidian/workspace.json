@@ -28,9 +28,31 @@
                 "currentVersion": "1.4.5"
               }
             }
+          },
+          {
+            "id": "f5d23ec0af00a24b",
+            "type": "leaf",
+            "state": {
+              "type": "diff-view",
+              "state": {
+                "file": ".obsidian/workspace.json",
+                "staged": true
+              }
+            }
+          },
+          {
+            "id": "92f8e0b920934f26",
+            "type": "leaf",
+            "state": {
+              "type": "diff-view",
+              "state": {
+                "file": ".obsidian/workspace.json",
+                "staged": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -96,7 +118,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Learning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +134,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Learning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,9 +155,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Learning.md"
-              }
+              "state": {}
             }
           },
           {
@@ -174,8 +192,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4c0f732286f67589",
+  "active": "92f8e0b920934f26",
   "lastOpenFiles": [
-    "Learning.md"
+    "conflict-files-obsidian-git.md",
+    "Markdown/_extended-syntax/task-lists.md",
+    "Markdown/_extended-syntax/tables.md",
+    "Markdown/_extended-syntax/superscript.md",
+    "Markdown/_extended-syntax/subscript.md",
+    "Markdown/_extended-syntax/strikethrough.md",
+    "Markdown/_extended-syntax/overview.md",
+    "Markdown/_extended-syntax/highlight.md",
+    "Markdown/_extended-syntax/heading-ids.md",
+    "Markdown/_extended-syntax/footnotes.md",
+    "Markdown/_extended-syntax/fenced-code-blocks.md",
+    "Markdown/_extended-syntax/emoji.md",
+    "Markdown/_extended-syntax/definition-lists.md",
+    "Markdown/_extended-syntax/availability.md",
+    "Markdown/_extended-syntax/automatic-url-linking.md",
+    "Markdown/_basic-syntax/unordered-lists.md",
+    "Markdown/_basic-syntax/paragraphs.md",
+    "Markdown/_basic-syntax/overview.md",
+    "Markdown/_basic-syntax/ordered-lists.md",
+    "Markdown/_basic-syntax/lists.md",
+    "Markdown/_basic-syntax/links.md",
+    "Markdown/_basic-syntax/line-breaks.md",
+    "Markdown/_basic-syntax/images.md",
+    "Markdown/_basic-syntax/italic.md",
+    "Markdown/_basic-syntax/html.md",
+    "Markdown/_basic-syntax/horizontal-rules.md",
+    "Markdown/_extended-syntax",
+    "Markdown/_basic-syntax",
+    "Markdown",
+    "Java"
   ]
 }
