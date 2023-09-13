@@ -534,6 +534,7 @@ Constant names use `UPPER_SNAKE_CASE`: all uppercase letters, with each word sep
 
 Constants are static final fields whose contents are deeply immutable and whose methods have no detectable side effects. Examples include primitives, strings, immutable value classes, and anything set to `null`. If any of the instance's observable state can change, it is not a constant. Merely _intending_ to never mutate the object is not enough. Examples:
 
+```java
 // Constants
 static final int NUMBER = 5;
 static final ImmutableList<String> NAMES = ImmutableList.of("Ed", "Ann");
@@ -550,7 +551,7 @@ static final ImmutableMap<String, SomeMutableType> mutableValues =
     ImmutableMap.of("Ed", mutableInstance, "Ann", mutableInstance2);
 static final Logger logger = Logger.getLogger(MyClass.getName());
 static final String[] nonEmptyArray = {"these", "can", "change"};
-
+```
 These names are typically nouns or noun phrases.
 
 #### 5.2.5 Non-constant field names
@@ -620,6 +621,7 @@ Except as noted below, it is very rarely correct to do nothing in response to a 
 
 When it truly is appropriate to take no action whatsoever in a catch block, the reason this is justified is explained in a comment.
 
+```java
 try {
   int i = Integer.parseInt(response);
   return handleNumericResponse(i);
@@ -627,23 +629,28 @@ try {
   // it's not numeric; that's fine, just continue
 }
 return handleTextResponse(response);
+```
 
 **Exception:** In tests, a caught exception may be ignored without comment _if_ its name is or begins with `expected`. The following is a very common idiom for ensuring that the code under test _does_ throw an exception of the expected type, so a comment is unnecessary here.
 
+```java
 try {
   emptyStack.pop();
   fail();
 } catch (NoSuchElementException expected) {
 }
+```
 
 ### 6.3 Static members: qualified using class
 
 When a reference to a static class member must be qualified, it is qualified with that class's name, not with a reference or expression of that class's type.
 
+```java
 Foo aFoo = ...;
 Foo.aStaticMethod(); // good
 aFoo.aStaticMethod(); // bad
 somethingThatYieldsAFoo().aStaticMethod(); // very bad
+```
 
 ### 6.4 Finalizers: not used
 
