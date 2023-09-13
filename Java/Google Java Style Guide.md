@@ -323,11 +323,15 @@ This practice is permitted, but is **never required** by Google Style. It is not
 
 Here is an example without alignment, then using alignment:
 
+```java
 private int x; // this is fine
 private Color color; // this too
+```
 
+```java
 private int   x;      // permitted, but future edits
 private Color color;  // may leave it unaligned
+```
 
 **Tip:** Alignment can aid readability, but it creates problems for future maintenance. Consider a future change that needs to touch just one line. This change may leave the formerly-pleasing formatting mangled, and that is **allowed**. More often it prompts the coder (perhaps you) to adjust whitespace on nearby lines as well, possibly triggering a cascading series of reformattings. That one-line change now has a "blast radius." This can at worst result in pointless busywork, but at best it still corrupts version history information, slows down reviewers and exacerbates merge conflicts.
 
@@ -356,7 +360,9 @@ private enum Answer {
 
 An enum class with no methods and no documentation on its constants may optionally be formatted as if it were an array initializer (see Section 4.8.3.1 on [array initializers](about:reader?url=https%3A%2F%2Fgoogle.github.io%2Fstyleguide%2Fjavaguide.html#s4.8.3.1-array-initializers)).
 
+```java
 private enum Suit { CLUBS, HEARTS, SPADES, DIAMONDS }
+```
 
 Since enum classes _are classes_, all other rules for formatting classes apply.
 
@@ -465,7 +471,9 @@ public String getNameIfPresent() { ... }
 
 Annotations applying to a field also appear immediately after the documentation block, but in this case, _multiple_ annotations (possibly parameterized) may be listed on the same line; for example:
 
+```java
 @Partial @Mock DataLoader loader;
+```
 
 ##### 4.8.5.5 Parameter and local variable annotations
 
@@ -477,10 +485,12 @@ Any line break may be preceded by arbitrary whitespace followed by an implementa
 
 Block comments are indented at the same level as the surrounding code. They may be in `/* ... */` style or `// ...` style. For multi-line `/* ... */` comments, subsequent lines must start with `*` aligned with the `*` on the previous line.
 
+```java
 /*
  * This is          // And so           /* Or you can
  * okay.            // is this.          * even do this. */
  */
+```
 
 Comments are not enclosed in boxes drawn with asterisks or other characters.
 
