@@ -150,7 +150,7 @@ Braces follow the Kernighan and Ritchie style ("[Egyptian brackets](http://www.c
 Exception: In places where these rules allow a single statement ending with a semicolon (`;`), a block of statements can appear, and the opening brace of this block is preceded by a line break. Blocks like these are typically introduced to limit the scope of local variables, for example inside switch statements.
 
 Examples:
-
+```java
 return () -> {
   while (condition()) {
     method();
@@ -177,6 +177,8 @@ return new MyClass() {
   }
 };
 
+```
+
 A few exceptions for enum classes are given in Section 4.8.1, [Enum classes](about:reader?url=https%3A%2F%2Fgoogle.github.io%2Fstyleguide%2Fjavaguide.html#s4.8.1-enum-classes).
 
 #### 4.1.3 Empty blocks: may be concise
@@ -184,19 +186,23 @@ A few exceptions for enum classes are given in Section 4.8.1, [Enum classes](abo
 An empty block or block-like construct may be in K & R style (as described in [Section 4.1.2](about:reader?url=https%3A%2F%2Fgoogle.github.io%2Fstyleguide%2Fjavaguide.html#s4.1.2-blocks-k-r-style)). Alternatively, it may be closed immediately after it is opened, with no characters or line break in between (`{}`), **unless** it is part of a _multi-block statement_ (one that directly contains multiple blocks: `if/else` or `try/catch/finally`).
 
 Examples:
-
-  // This is acceptable
+```java
+// This is acceptable
   void doNothing() {}
-
+```
+  
+```java
   // This is equally acceptable
   void doNothingElse() {
   }
+```
 
+```java
   // This is not acceptable: No concise empty blocks in a multi-block statement
   try {
     doSomething();
   } catch (Exception e) {}
-
+```
 ### 4.2 Block indentation: +2 spaces
 
 Each time a new block or block-like construct is opened, the indent increases by two spaces. When the block ends, the indent returns to the previous indent level. The indent level applies to both code and comments throughout the block. (See the example in Section 4.1.2, [Nonempty blocks: K & R Style](about:reader?url=https%3A%2F%2Fgoogle.github.io%2Fstyleguide%2Fjavaguide.html#s4.1.2-blocks-k-r-style).)
@@ -244,6 +250,7 @@ The prime directive of line-wrapping is: prefer to break at a **higher syntactic
 4. A comma (`,`) stays attached to the token that precedes it.
 5. A line is never broken adjacent to the arrow in a lambda, except that a break may come immediately after the arrow if the body of the lambda consists of a single unbraced expression. Examples:
     
+```java
     MyLambda<String, Long, Object> lambda =
         (String label, Long value, Object obj) -> {
             ...
@@ -252,6 +259,7 @@ The prime directive of line-wrapping is: prefer to break at a **higher syntactic
     Predicate<String> predicate = str ->
         longExpressionInvolving(str);
     
+```
 
 **Note:** The primary goal for line wrapping is to have clear code, _not necessarily_ code that fits in the smallest number of lines.
 
@@ -333,6 +341,7 @@ Optional grouping parentheses are omitted only when author and reviewer agree th
 
 After each comma that follows an enum constant, a line break is optional. Additional blank lines (usually just one) are also allowed. This is one possibility:
 
+```java
 private enum Answer {
   YES {
     @Override public String toString() {
@@ -343,6 +352,7 @@ private enum Answer {
   NO,
   MAYBE
 }
+```
 
 An enum class with no methods and no documentation on its constants may optionally be formatted as if it were an array initializer (see Section 4.8.3.1 on [array initializers](about:reader?url=https%3A%2F%2Fgoogle.github.io%2Fstyleguide%2Fjavaguide.html#s4.8.3.1-array-initializers)).
 
@@ -368,6 +378,7 @@ Local variables are **not** habitually declared at the start of their containing
 
 Any array initializer may _optionally_ be formatted as if it were a "block-like construct." For example, the following are all valid (**not** an exhaustive list):
 
+```java
 new int[] {           new int[] {
   0, 1, 2, 3            0,
 }                       1,
@@ -377,7 +388,7 @@ new int[] {             3,
   2, 3
 }                     new int[]
                           {0, 1, 2, 3}
-
+```
 ##### 4.8.3.2 No C-style array declarations
 
 The square brackets form a part of the _type_, not the variable: `String[] args`, not `String args[]`.
@@ -396,6 +407,7 @@ After a switch label, there is a line break, and the indentation level is increa
 
 Within a switch block, each statement group either terminates abruptly (with a `break`, `continue`, `return` or thrown exception), or is marked with a comment to indicate that execution will or _might_ continue into the next statement group. Any comment that communicates the idea of fall-through is sufficient (typically `// fall through`). This special comment is not required in the last statement group of the switch block. Example:
 
+```java
 switch (input) {
   case 1:
   case 2:
@@ -407,6 +419,7 @@ switch (input) {
   default:
     handleLargeNumber(input);
 }
+```
 
 Notice that no comment is needed after `case 1:`, only at the end of the statement group.
 
@@ -422,7 +435,9 @@ Each switch statement includes a `default` statement group, even if it contains 
 
 Type-use annotations appear immediately before the annotated type. An annotation is a type-use annotation if it is meta-annotated with `@Target(ElementType.TYPE_USE)`. Example:
 
+```java
 final @Nullable String name;
+```
 
 public @Nullable Person getPersonByName(String name);
 

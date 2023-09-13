@@ -74,7 +74,7 @@ To create code blocks, indent every line of the block by at least four spaces or
 
 The rendered output looks like this:
 
-```text
+```html
 <html>
   <head>
   </head>
