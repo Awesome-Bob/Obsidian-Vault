@@ -11,3 +11,8 @@ Extrinsic learning:
 
 > “it’s important to establish a real sense of confidence that we have the ability to learn.”
 
+
+
+
+
+
